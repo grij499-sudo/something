@@ -17,10 +17,20 @@
 
 ## 尚未验证
 
-- DGX ARM64 上的安装与运行。
-- 用户 DGX 上 `grij499-sudo/something` 的本地克隆、实际目录配置与运行。
+- DGX 上 tunnel-client 的实际联网运行；安装输出不等于已连接。
 - 真实 Tunnel 的权限、工作区关联和网络连接。
 - ChatGPT 网页发现并调用这个 MCP 服务。
 - 用户机器上的 GitHub 任务分支推送、拉取与文件内容往返核对。
 
 需要目标机器和对应账号配置才能完成这些检查，不能用上述工作区测试替代。
+
+## 用户回传的目标机器证据
+
+2026-11-02，用户回传了本机安装器与验证器输出：
+
+- `local_mcp: verified`，项目根目录指向 `something` 的本机工作副本。
+- 工具列表包含 `project_info`、`list_files`、`read_file`、`search_text`；`path_restrictions: verified`。
+- 读取 `coordination/connection-check.md` 得到 SHA256：`5c2b40efbd932f8eb5dee1301817d757b7df4c05a071c776837d2c425e5b9393`。与发布文件重新计算的值一致。
+- 输出中 Tunnel 状态仍为 `must still be verified from ChatGPT`。
+
+以上为用户回传的终端证据，未由本会话直接登录目标机器复跑。用户随后选择只使用现有订阅，暂停 Tunnel，先完成 GitHub 协作往返；这项决定不影响已经通过的本地验证。

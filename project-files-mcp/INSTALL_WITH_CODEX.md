@@ -1,5 +1,11 @@
 # 交给项目所在电脑上的 Codex
 
+**当前入口已改变：用户选择只使用现有订阅，先通过 GitHub 协作，暂停 Tunnel。**
+
+现在请先读根目录 `AGENTS.md` 和 `coordination/tasks/T001/TASK.md`，完成 T001 的任务读取、报告提交和推送。用户已经回传本地 MCP 验证成功，不重复安装，不创建 Platform API key，不启动 Tunnel。
+
+以下为保留的 MCP 完整接入说明，**仅在用户之后明确恢复该项工作时使用**。
+
 请帮我完成 GitHub 项目共享与本包的本地文件 MCP 接入。
 
 1. 读取根目录与本包 README。仓库已确定为 `https://github.com/grij499-sudo/something`；首次部署默认以这个仓库的实际本地根目录作为 MCP 项目目录，无需重新询问仓库或猜测固定路径。若用户明确指定另一个项目目录，使用该目录。

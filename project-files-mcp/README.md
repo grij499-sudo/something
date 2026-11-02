@@ -2,9 +2,11 @@
 
 版本 0.1.0｜2026-11-02
 
+**当前决定：只使用现有订阅，通过 GitHub 交接任务；Secure MCP Tunnel 配置暂停。** 用户已回传本地 MCP 验证通过，当前入口见仓库根 README 与 `coordination/tasks/T001/TASK.md`。下面的 Tunnel 步骤作为后续技术说明保留，当前不执行。
+
 这个包实现“在 ChatGPT 网页读取指定 Linux 项目的本地文件”。GitHub 则提供同一项目的已提交版本与写入通路。两条连接分别验收。
 
-**交付状态：服务与安装器已实现，目标仓库已确定为 `grij499-sudo/something`；30 项测试通过；云端工作区的 Linux x86_64 官方 tunnel-client 已下载并验证帮助命令。目标 DGX、本机 Git 往返、真实 Tunnel 与 ChatGPT 网页调用仍需实际安装后验证。**
+**交付状态：服务与安装器已实现，目标仓库为 `grij499-sudo/something`；30 项测试通过；云端工作区的 Linux x86_64 官方 tunnel-client 已下载并验证帮助命令。用户回传的 DGX 本地 MCP 验证已通过，检查文件哈希一致。本机 Git 推送往返由 T001 验收；真实 Tunnel 与 ChatGPT 网页调用仍未验证。**
 
 ## 1. 服务能做什么
 

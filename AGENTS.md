@@ -2,6 +2,14 @@
 
 本项目实现 ChatGPT / Codex 通过 GitHub 共享项目，以及通过本地 stdio MCP 读取指定 Linux 项目。先阅读根 README 和当前任务文件。
 
+## 当前工作方式
+
+- 用户已选择使用现有订阅，通过 GitHub 完成计划、执行和审核的交接。
+- Secure MCP Tunnel 接入暂停。当前不创建或使用 Platform API key，不启动 Tunnel，不将 Codex 改为 API key 登录，不增加模型 API 调用；本地 MCP 安装结果保留。
+- 首次协作任务是 `coordination/tasks/T001/TASK.md`，执行分支为 `task/T001-github-handoff`。
+- 分别记录任务/源代码提交与最终交付提交。报告不要试图写入包含它自身的最终提交号；提交后在聊天回执提供该 SHA。
+- 审核者按实际回读的提交判断。仅有执行者的本机日志时，应注明是回传证据，不能写成审核者亲自在目标机器执行。
+
 ## 目录与运行
 
 - MCP 源码、安装器和测试位于 `project-files-mcp/`。
