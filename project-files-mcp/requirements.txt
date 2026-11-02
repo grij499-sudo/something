@@ -1,0 +1,2 @@
+# Official MCP Python SDK; tested with Python 3.12.
+mcp==2.3.0
